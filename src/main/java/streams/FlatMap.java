@@ -18,10 +18,9 @@ public class FlatMap {
             return list.stream();
         }).forEach(e -> System.out.print(e + " "));
 
-        stream.filter(list -> list.size() > 0);
-
         System.out.println();
-        System.out.println("using inner stream");
+        System.out.println("The same logic but using using inner stream");
+
         stream = Stream.of(string1, string2, string3);
         stream.forEach(list -> {
             System.out.println();
